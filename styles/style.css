@@ -67,24 +67,34 @@ ol {
 /* Начинаем проект */
 
 .content {
-  outline: 1px solid navy;
   display: flex;
 
+  align-items: flex-end;
   gap: 30px;
+  margin: 0 auto;
+
+  max-width: 1140px;
+  width: 100%;
 }
 
 .result {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 16px;
 }
 
 .search-form {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 40px;
 }
-
-.content__list {
-  overflow-y: scroll;
+.content__list-container {
+  overflow-y: auto;
   max-height: 300px;
+}
+
+.content__details {
+  width: 100%;
 }
