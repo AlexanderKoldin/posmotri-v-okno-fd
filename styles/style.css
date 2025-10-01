@@ -90,6 +90,7 @@ ol {
   align-items: flex-start;
   gap: 40px;
 }
+
 .content__list-container {
   overflow-y: auto;
   max-height: 300px;
@@ -97,4 +98,30 @@ ol {
 
 .content__details {
   width: 100%;
+}
+
+.result__video-container {
+  width: 711px;
+  height: 386px;
+}
+
+.result__video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.content__video-card-thumbnail {
+  object-fit: cover;
+  object-position: center;
+  width: 194px;
+
+  margin-right: 5px;
 }
