@@ -53,7 +53,7 @@ ol {
   background-color: #d9d9d9;
 }
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -61,7 +61,7 @@ ol {
   block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
-} */
+}
 
 /* outline: 1px solid navy; */
 /* Начинаем проект */
@@ -126,18 +126,19 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-weight: 400;
+  margin-bottom: 5px;
   font-size: 18px;
+  font-weight: 400;
 }
 
 .title {
-  font-weight: 700;
+  margin-bottom: 26px;
+  font-family: "Oswald";
   font-size: 75px;
+  font-weight: 700;
 
   line-height: 94%;
   text-transform: uppercase;
-  font-family: "Oswald";
-  margin-bottom: 26px;
 }
 
 .content__accent {
@@ -152,26 +153,98 @@ ol {
 }
 
 .content__video-card-title {
+  max-width: 190px;
+  margin-bottom: 6px;
+  color: #fff;
   font-family: "Oswald";
-  font-weight: 700;
   font-size: 30px;
+  font-weight: 700;
 
   line-height: 100%;
   text-transform: uppercase;
-  color: #fff;
-
-  max-width: 190px;
 
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-bottom: 6px;
 }
 
 .content__video-card-description {
-  font-weight: 400;
+  color: #fff;
   font-size: 18px;
+  font-weight: 400;
 
   line-height: 90%;
-  color: #fff;
 }
+
+/* Шаг 4 */
+.search-form__fieldset {
+  border: none;
+}
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__label {
+  display: flex;
+  /* align-items: center; */
+  /* width: fit-content; */
+  gap: 15px;
+}
+
+.search-form__textfield {
+  width: 230px;
+
+  padding: 2.5px 14px 2.5px 0;
+
+  border: none;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.7);
+
+  color: #fff;
+  font: inherit;
+  font-size: 18px;
+
+  font-weight: 400;
+
+  line-height: 1.4;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+
+  appearance: none;
+}
+
+/* TODO Сделать "Факультативный шаг" */
+
+/* Стилизуем чекбокс */
+
+.search-form__pseudo-checkbox {
+  border: 1px solid #fff;
+  width: 19px;
+  height: 19px;
+  padding: 1px;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.search-form__pseudo-checkbox::after {
+  content: "";
+  display: block;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  opacity: 1;
+}
+
+.search-form__checkbox-list .search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* TODO Сделать "Факультативный шаг" */
