@@ -63,7 +63,6 @@ ol {
   white-space: nowrap;
 }
 
-/* Начинаем проект */
 .content {
   display: flex;
   align-items: flex-end;
@@ -205,7 +204,6 @@ ol {
   cursor: pointer;
 }
 
-/* Объединяем :has() для всех фокусируемых элементов */
 .search-form__label:has(:focus-visible) {
   outline: 1px solid white;
   outline-offset: 2px;
@@ -223,7 +221,6 @@ ol {
   appearance: none;
 }
 
-/* Стили автозаполнения */
 .search-form__textfield:-webkit-autofill,
 .search-form__textfield:-moz-autofill {
   -webkit-box-shadow: 0 0 0px 1000px #1b1919 inset;
